@@ -1,38 +1,27 @@
-.App {
+body {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-image: url(https://ae01.alicdn.com/kf/HTB1UOc1LQzoK1RjSZFlq6yi4VXa6/Sumikko-Gurashi.jpg_960x960.jpg);
+  background-position: center;
+  background-repeat: no-repeat; 
+  background-size: cover;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.2em;
+  background-color: Thistle ;
+  border: 25px solid navy;
+  margin: 100px;
+} 
+ 
+.btn {
+  background-color: #4CAF50;
   color: white;
+  padding: 5px 15px;
+  margin-top: 0.3em;
 }
 
-.App-link {
-  color: #61dafb;
+.btr {
+  background-color: rosybrown;
+  color: white;
+  padding: 5px 15px;
+  margin-left: 0.3em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

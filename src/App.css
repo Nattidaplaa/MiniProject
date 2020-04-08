@@ -1,25 +1,25 @@
 body {
   text-align: center;
-  background-image: url(https://ae01.alicdn.com/kf/HTB1UOc1LQzoK1RjSZFlq6yi4VXa6/Sumikko-Gurashi.jpg_960x960.jpg);
+  background-image: url(https://img.wongnai.com/p/1920x0/2019/04/11/77db17f7e7784e00bc7ba55b734ad6fe.jpg); 
   background-position: center;
   background-repeat: no-repeat; 
-  background-size: cover;
+  background-size: cover; 
   font-family: 'Courier New', Courier, monospace;
   font-size: 1.2em;
-  background-color: Thistle ;
-  border: 25px solid navy;
-  margin: 100px;
+  color: black;
+  background-color: black ;
+  background-position: 0px 0px;
 } 
  
 .btn {
-  background-color: #00FF00;
+  background-color: black;
   color: white;
   padding: 5px 15px;
   margin-top: 0.3em;
 }
 
 .btr {
-  background-color: #FF0099;
+  background-color: pink;
   color: white;
   padding: 5px 15px;
   margin-left: 0.3em;

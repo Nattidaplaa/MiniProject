@@ -64,7 +64,7 @@ class LoginForm extends React.Component {
     if (currentUser) {
       return (
         <div>
-          <h2>Welcome to diary {currentUser.email}</h2>
+          <h2>Welcome to {currentUser.email}</h2>
           <button onClick={this.logout}>Logout</button>
         </div>
       )

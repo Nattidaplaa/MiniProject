@@ -6,7 +6,6 @@ body {
   /* background-size: cover;  */
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 1.5em;
-  color: black;
   background-color: black ;
   background-position: 0px 0px;
 } 
@@ -14,6 +13,17 @@ body {
 .App {
   color: white;
 }
+.btp {
+  color: black;
+}
+
+.btm {
+  background-color: rgb(59, 11, 90);
+  color: white;
+  padding: 5px 15px;
+  margin-top: 0.3em;
+}
+
 .btn {
   background-color: black;
   color: white;
@@ -22,7 +32,7 @@ body {
 }
 
 .btr {
-  background-color: pink;
+  background-color: rgb(235, 75, 195);
   color: white;
   padding: 5px 15px;
   margin-left: 0.3em;

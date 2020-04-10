@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import auth from '../firebase'
 import * as firebase from 'firebase';
 const NewLoginForm = (props) => {
     const { setLogin } = props;
@@ -30,9 +29,9 @@ const NewLoginForm = (props) => {
 
     console.log(email, password);
     const SIGNUP = (
-        <div>
+        <div className="btp">
             <form>
-                <p>สมัคร</p>
+                <p>SIGN-UP</p>
                 <label>Email : </label>
                 <input
                     className="input"
@@ -49,17 +48,16 @@ const NewLoginForm = (props) => {
                         onChange={(e) => setPassword(e.target.value)}
                     />
                 </div >
-                {/* {message ? <p className="help is-danger">{message}</p> : null} */}
                 <div>
-                    <button className="btn" onClick={SignUPFirebase}> สมัคร </button>
+                    <button className="btm" onClick={SignUPFirebase}> Sign up </button>
                 </div>
             </form>
         </div>
     )
     const LOGIN = (
-        <div>
+        <div className="btp">
             <form>
-                <p>เข้าสู่ระบบ</p>
+                <p>SIGN-IN</p>
                 <label>Email : </label>
                 <input
                     className="input"
@@ -78,7 +76,7 @@ const NewLoginForm = (props) => {
                 </div >
                 {/* {message ? <p className="help is-danger">{message}</p> : null} */}
                 <div>
-                    <button className="btn" onClick={Login}> เข้าสู่ระบบ </button>
+                    <button className="btm" onClick={Login}> Login </button>
                 </div>
             </form>
         </div>
@@ -86,8 +84,8 @@ const NewLoginForm = (props) => {
     const [Display, setDisplay] = useState(false);
     return (
         <div>
-            <button onClick={() => setDisplay(false)}>SIGN UP</button>
-            <button onClick={() => setDisplay(true)}> LOGIN</button>
+            <button className="btn" onClick={() => setDisplay(false)}>SIGN-UP</button>
+            <button className="btr" onClick={() => setDisplay(true)}> SIGN-IN</button>
             {Display === false ? SIGNUP : LOGIN}
 
         </div>

@@ -4,11 +4,13 @@ import PhotoBlackpink from './components/PhotoBlackpink'
 import NewLoginForm from './components/NewLoginForm';
 
 function App() {
+
   const [Login, setLogin] = useState(false);
+
   return (
     <div className="App">
       <h1>MiniProject</h1>
-      <NewLoginForm setLogin={setLogin} />
+      {Login === false ? <NewLoginForm setLogin={setLogin}/> : null  }
       {Login && <PhotoBlackpink />}
     </div>
   );

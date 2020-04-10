@@ -15,7 +15,6 @@ const PhotoBlackpink = () => {
             <div key={index}>
                 <p>{nameBlackpink[index]}</p>
                 <img src={photo.img} width="300px"/>
-                {/* {console.log(photo.img)} */}
             </div>
         )
     })

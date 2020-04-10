@@ -1,16 +1,19 @@
 body {
   text-align: center;
-  background-image: url(https://img.wongnai.com/p/1920x0/2019/04/11/77db17f7e7784e00bc7ba55b734ad6fe.jpg); 
+  background-image: url("https://talk.mthai.com/storage/uploads/2019/07/09/f307d702ada7134c97ab3d99e9bf78f5.jpeg"); 
   background-position: center;
-  background-repeat: no-repeat; 
-  background-size: cover; 
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 1.2em;
+  background-repeat: repeat; 
+  /* background-size: cover;  */
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 1.5em;
   color: black;
   background-color: black ;
   background-position: 0px 0px;
 } 
  
+.App {
+  color: white;
+}
 .btn {
   background-color: black;
   color: white;

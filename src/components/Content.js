@@ -41,7 +41,7 @@ class Content extends Component {
       },
       {
         name: '5',
-        text: 'Music Video',
+        text: 'MV',
         component: <MV />
         
       },

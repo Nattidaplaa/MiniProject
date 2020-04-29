@@ -83,5 +83,9 @@ body {
   .white{
     color: white;
   }
+
+  .left{
+    margin-left: 15px;
+  }
   
   

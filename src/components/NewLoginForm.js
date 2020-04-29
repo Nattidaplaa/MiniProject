@@ -96,7 +96,7 @@ const NewLoginForm = (props) => {
     )
     const [Display, setDisplay] = useState(false);
     return (
-        <div className="bg">
+        <div className="frame">
             <h1>BLΛƆKPIИK(블랙핑크) </h1>
             <button className="btr" onClick={() => setDisplay(false)}>SIGN-IN.</button>
             <button className="btm" onClick={() => setDisplay(true)}> SIGN-UP.</button>

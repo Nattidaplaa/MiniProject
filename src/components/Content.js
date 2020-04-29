@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '../App.css';
+import ScrollArea from 'react-scrollbar'
 import 'bootstrap/dist/css/bootstrap.css';
 import Nav from './Nav'
 import Lisa from './Lisa'
@@ -7,6 +8,7 @@ import Jennie from './Jennie'
 import Jisoo from './Jisoo'
 import Rose from './Rose'
 import Blackpink from './Blackpink'
+import Comment from './Comment'
 
 class Content extends Component {
   constructor(props) {
@@ -37,6 +39,12 @@ class Content extends Component {
         text: 'Jisoo',
         component: <Jisoo />
       },
+      {
+        name: '5',
+        text: 'Comment',
+        component: <Comment />
+        
+      },
     ];
 
     this.state = { currentPage: PAGES[0], pages: PAGES };
@@ -54,15 +62,20 @@ class Content extends Component {
 
   render() {
     return (
-      <div className="body">
+      <div className="body1">
+      <div className="body2">
         <div className="row">
-          <div className="col-md-2 sidebar">
+          <div className="col-md-2 sidebar center white">
             <Nav setPage={this.setPage} currentPage={this.state.currentPage} pages={this.state.pages} />
+            <a className="white" href="/">Logout</a>
           </div>
-          <div className="col content">
+          <div className="col">
+          <ScrollArea className="dis" >
             {this.state.currentPage.component}
+          </ScrollArea>
           </div>
         </div>
+      </div>
       </div>
     );
   }

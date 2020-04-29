@@ -1,67 +1,86 @@
 body {
-  background-size: cover; 
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-size: 1.5em;
-  background-color: #d5adc8;
-  background-image: linear-gradient(315deg, #d5adc8 0%, #ff8489 74%);
+    background-size: cover; 
+    background-image: url(./image/jennie.jpg)
+  } 
   
-} 
- 
-.bg {
-  text-align: center;
-}
-
-.App {
-  color: white;
-  text-align: center;
-}
-
-.btm {
-  background-color: rgb(59, 11, 90);
-  color: white;
-  padding: 5px 15px;
-  margin-top: 0.3em;
-}
-
-.btr {
-  background-color: rgb(235, 75, 195);
-  color: white;
-  padding: 5px 15px;
-  margin-right: 0.3em;
-}
-
-.page {
-  background-color: pink;
-  padding: 10px 20px 600px;
-}
-
-.sidebar {
-  padding: 10px;
-  background-color: black;
-}
-
-.body{
-  margin: 40px 90px 0px 100px;
-}
-
-.top{
-  margin-top: 10px;
-}
-
-.right{
-  margin-right: 43px;
-}
-.right2{
-  margin-right: 14px;
-}
-.right3{
-  margin-right: 6px;
-}
-.right4{
-  margin-right: 9px;
-}
-
-
-
-
-
+  .body1{
+    background-image: linear-gradient(315deg, #d5adc8 0%, #ff8489 74%);;
+  }
+  
+  .body2{
+    padding: 23px 90px 0px 102px;
+    height: 100vh;
+  }
+  
+  .frame{
+    text-align: center;
+    margin: auto;
+    margin-top: 15rem;
+    width: 30%;
+    border: 3px solid gray;
+    padding: 10px;
+  }
+  
+  .center{
+    text-align: center;
+  }
+  
+  .btm {
+    background-color: rgb(59, 11, 90);
+    color: white;
+    padding: 5px 15px;
+    margin-top: 0.3em;
+  }
+  
+  .btr {
+    background-color: rgb(235, 75, 195);
+    color: white;
+    padding: 5px 15px;
+    margin-right: 0.3em;
+  }
+  
+  .page {
+    background-color: pink;
+    padding: 10px 50px ;
+  }
+  
+  .sidebar {
+    padding-top: 10px;
+    background-image: url(./image/Nav.jpg);
+  }
+  
+  .top{
+    margin-top: 12px;
+  }
+  
+  .right{
+    margin-right: 43px;
+  }
+  .right2{
+    margin-right: 14px;
+  }
+  .right3{
+    margin-right: 6px;
+  }
+  .right4{
+    margin-right: 9px;
+  }
+  .right5{
+    margin-right: 16px;
+    color: white;
+  }
+  
+  .click {
+    cursor: pointer;
+  }
+  
+  .dis{
+     height: 45rem;
+     background-color: pink;
+     font-size: 1.3em;
+  }
+  .white{
+    color: white;
+  }
+  
+  

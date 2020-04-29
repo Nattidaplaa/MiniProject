@@ -13,11 +13,12 @@ function App() {
 
   const [Login, setLogin] = useState(false);
 
-
   return (
-    <div className="App">
+    <div>
+      <div className="white">
       {Login === false ? <NewLoginForm setLogin={setLogin}/> : null  }
-      {Login &&  <Content />  }
+     </div>
+     {Login && <Content />  }
     </div>
   );
 }

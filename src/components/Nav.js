@@ -13,24 +13,24 @@ class Nav extends Component {
 
   render() {
     const pages = this.props.pages;
-    let retHtml = [];
+    let Nav = [];
     pages.forEach( page => {
       if (page.name === this.props.currentPage.name) {
-        retHtml.push (
-          <li className="nav-item" key={page.name}>
-            <a name={page.name} className="nav-link active" href="" onClick={this.onClick}>{page.text}</a>
+        Nav.push (
+          <li className="click" key={page.name}>
+            <a name={page.name} className="nav-link active "  onClick={this.onClick}>{page.text}</a>
           </li>
         );
       } else {
-        retHtml.push (
-          <li className="nav-item" key={page.name}>
-            <a name={page.name} className="nav-link" href="" onClick={this.onClick}>{page.text}</a>
+        Nav.push (
+          <li className="click" key={page.name}>
+            <a name={page.name} className="nav-link "  onClick={this.onClick}>{page.text}</a>
           </li>
         );
       }
     }
     );
-    return <ul className="nav nav-pills flex-column sidebar">{retHtml}</ul>;
+    return <ul className="nav nav-pills flex-column sidebar">{Nav}</ul>;
   }
 }
 

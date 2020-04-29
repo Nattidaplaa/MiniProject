@@ -1,6 +1,6 @@
 body {
     background-size: cover; 
-    background-image: url(./image/jennie.jpg)
+    background-image: url(./image/bg1.jpg)
   } 
   
   .body1{
@@ -17,8 +17,9 @@ body {
     margin: auto;
     margin-top: 15rem;
     width: 30%;
-    border: 3px solid gray;
+    border: 2px solid lightgray;
     padding: 10px;
+    background-color: rgba(0,0,0, 0.3)
   }
   
   .center{

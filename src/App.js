@@ -15,10 +15,10 @@ function App() {
 
   return (
     <div>
-      <div className="white">
+     {/*  <div className="white">
       {Login === false ? <NewLoginForm setLogin={setLogin}/> : null  }
-     </div>
-     {Login && <Content />  }
+     </div> */}
+     {/* Login && */ <Content />  }
     </div>
   );
 }

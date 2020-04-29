@@ -8,7 +8,7 @@ import Jennie from './Jennie'
 import Jisoo from './Jisoo'
 import Rose from './Rose'
 import Blackpink from './Blackpink'
-import Comment from './Comment'
+import MV from './MV'
 
 class Content extends Component {
   constructor(props) {
@@ -41,8 +41,8 @@ class Content extends Component {
       },
       {
         name: '5',
-        text: 'Comment',
-        component: <Comment />
+        text: 'Music Video',
+        component: <MV />
         
       },
     ];

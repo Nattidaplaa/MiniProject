@@ -61,7 +61,7 @@ const NewLoginForm = (props) => {
                     />
                 </div >
                 <div>
-                    <button className="btm" onClick={SignUPFirebase}> Sign up </button>
+                    <button className="btm" onClick={SignUPFirebase}> REGISTER </button>
                 </div>
             </form>
         </div>
@@ -89,7 +89,7 @@ const NewLoginForm = (props) => {
                 </div >
 
                 <div>
-                    <button className="btm" onClick={Login}> Login </button>
+                    <button className="btm" onClick={Login}> LOGIN </button>
                 </div>
             </form>
         </div>
@@ -97,9 +97,9 @@ const NewLoginForm = (props) => {
     const [Display, setDisplay] = useState(false);
     return (
         <div className="frame">
-            <h1>BLΛƆKPIИK(블랙핑크) </h1>
-            <button className="btr" onClick={() => setDisplay(false)}>SIGN-IN.</button>
-            <button className="btm" onClick={() => setDisplay(true)}> SIGN-UP.</button>
+            <h1>BLΛƆKPIИK(블랙핑크)</h1>
+            <button className="btr" onClick={() => setDisplay(false)}>SIGN-IN</button>
+            <button className="btm" onClick={() => setDisplay(true)}> SIGN-UP</button>
             {Display === false ? LOGIN : SIGNUP}
 
         </div>

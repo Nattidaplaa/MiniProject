@@ -3,7 +3,7 @@ import bp from '../image/bp.jpg';
 import { firestore } from '../index'
 
 const Blackpink = () => {
-  const [text1,settext1]=useState('');
+  const [Text1,setText1]=useState('');
   useEffect(() => {
     Data_firebase();
   }, [])
@@ -12,7 +12,7 @@ const Blackpink = () => {
       let tasksfirebase = snapshot.docs.map(data => {
         return data.data();
       })
-      settext1(tasksfirebase[2])
+      setText1(tasksfirebase[2])
     })
   }
 
@@ -24,10 +24,18 @@ const Blackpink = () => {
           <img src={bp} alt="black pink" />
           <div className="top"> </div>
         </div>
-        <div className="top">
-        {text1.text1}
-        <div>{text1.text2}</div>
+        <div className="top">{Text1.text1}</div>
+        <div className="top">{Text1.text2}</div>
+        <div className="center top">
+          <img  src="https://0.soompi.io/wp-content/uploads/2017/06/26202207/blackpink-4.jpg?s=900x600&e=t" ></img>
         </div>
+        <div className="top">{Text1.text3}</div>
+        <div className="top">{Text1.text4}</div>
+        <div className="center top">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/XSn8hTac6fo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div className="top">{Text1.text5}</div>
+        <div className="top">{Text1.text6}</div>
      </div>
     </div>
   )

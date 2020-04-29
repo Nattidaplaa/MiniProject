@@ -1,3 +1,4 @@
+
 const config = {
     apiKey: "AIzaSyBKmjMJzsfXbQdEhk_gogd9Ginzc5JSdLA",
     authDomain: "mini-ac836.firebaseapp.com",

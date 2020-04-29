@@ -1,5 +1,8 @@
 import React, { useState } from 'react'
 import * as firebase from 'firebase';
+import '../App.css'
+
+
 const NewLoginForm = (props) => {
     const { setLogin } = props;
     const [email, setEmail] = useState('');
@@ -29,22 +32,31 @@ const NewLoginForm = (props) => {
 
     console.log(email, password);
     const SIGNUP = (
-        <div className="btp">
+        <div className="top">
             <form>
-                <p>SIGN-UP</p>
-                <label>Email : </label>
+                <div>
+                    <label className="right3" >First name</label>
+                    <input className="input" placeholder="Enter First name" />
+                </div>
+                <div>
+                    <label className="right4" >Last name</label>
+                    <input className="input" placeholder="Enter Last name " />
+                </div>
+                <label className="right">Email  </label>
                 <input
                     className="input"
                     type="email"
                     name="email"
+                    placeholder="Enter Email"
                     onChange={(e) => setEmail(e.target.value)}
                 />
-                <div className="field">
-                    <label>Password : </label>
+                <div>
+                    <label className="right2" >Password  </label>
                     <input
                         className="input"
                         type="password"
                         name="password"
+                        placeholder="Enter Password"
                         onChange={(e) => setPassword(e.target.value)}
                     />
                 </div >
@@ -55,26 +67,27 @@ const NewLoginForm = (props) => {
         </div>
     )
     const LOGIN = (
-        <div className="btp">
+        <div className="top">
             <form>
-                <p>SIGN-IN</p>
-                <label>Email : </label>
+                <label className="right">Email </label>
                 <input
                     className="input"
                     type="email"
                     name="email"
+                    placeholder="Enter Email"
                     onChange={(e) => setEmail(e.target.value)}
                 />
-                <div className="field">
-                    <label>Password : </label>
+                <div>
+                    <label className="right2">Password </label>
                     <input
                         className="input"
                         type="password"
                         name="password"
+                        placeholder="Enter Password"
                         onChange={(e) => setPassword(e.target.value)}
                     />
                 </div >
-                {/* {message ? <p className="help is-danger">{message}</p> : null} */}
+
                 <div>
                     <button className="btm" onClick={Login}> Login </button>
                 </div>
@@ -83,10 +96,11 @@ const NewLoginForm = (props) => {
     )
     const [Display, setDisplay] = useState(false);
     return (
-        <div>
-            <button className="btn" onClick={() => setDisplay(false)}>SIGN-UP</button>
-            <button className="btr" onClick={() => setDisplay(true)}> SIGN-IN</button>
-            {Display === false ? SIGNUP : LOGIN}
+        <div className="bg">
+            <h1>BLΛƆKPIИK(블랙핑크) </h1>
+            <button className="btr" onClick={() => setDisplay(false)}>SIGN-IN.</button>
+            <button className="btm" onClick={() => setDisplay(true)}> SIGN-UP.</button>
+            {Display === false ? LOGIN : SIGNUP}
 
         </div>
     )

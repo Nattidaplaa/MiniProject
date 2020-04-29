@@ -2,14 +2,14 @@ import React, { useState } from 'react'
 import * as firebase from 'firebase';
 import '../App.css'
 
-
 const NewLoginForm = (props) => {
+
     const { setLogin } = props;
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
     const SignUPFirebase = e => {
-        e.preventDefault();
+        e.preventDefault(); alert('Resgister Done !!!');
         firebase.auth().createUserWithEmailAndPassword(email, password).then(data => {
             console.log(data);
         }).catch(function (error) {
@@ -95,6 +95,8 @@ const NewLoginForm = (props) => {
         </div>
     )
     const [Display, setDisplay] = useState(false);
+
+    
     return (
         <div className="frame">
             <h1>BLΛƆKPIИK(블랙핑크)</h1>
